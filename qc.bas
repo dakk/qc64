@@ -17,7 +17,7 @@
 101 print
 
 102 sq = r0*r0 + i0*i0 + r1*r1 + i1*i1 + r2*r2 + i2*i2 + r3*r3 + i3*i3
-103 if abs(sq - 1) > 0.00001 then goto 600
+103 if abs(sq - 1) > 0.00001 then gosub 600
 
 105 print "running" shots "iterations..."
 110 z0 = 0 : z1 = 0 : z2 = 0 : z3 = 0
