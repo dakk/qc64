@@ -63,9 +63,9 @@
 
 420 rem x1 gate
 425 a0 = r1 : r1 = r3 : r3 = a0
-430 a0 = i1 : i1 = i3 : i3 = a0
-425 a0 = r0 : r0 = r2 : r2 = a0
-430 a0 = i0 : i0 = i2 : i2 = a0
+426 a0 = i1 : i1 = i3 : i3 = a0
+427 a0 = r0 : r0 = r2 : r2 = a0
+428 a0 = i0 : i0 = i2 : i2 = a0
 
 440 rem y0 gate
 446 a0 = i0 : i0 = -r0 : r0 = a0
@@ -94,7 +94,7 @@
 525 a0 = (r2 + r3) / sqr(2) : a1 = (i2 + i3) / sqr(2)
 526 b0 = (r2 - r3) / sqr(2) : b1 = (i2 - i3) / sqr(2)
 527 r2 = a0 : i2 = a1 : r3 = b0 : i3 = b1
-527 return
+528 return
 
 540 rem h1 gate
 541 a0 = (r0 + r2) / sqr(2) : a1 = (i0 + i2) / sqr(2)
