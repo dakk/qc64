@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# requires Python >= 3.10
 # based on https://github.com/dakk/qc64
 
 import os
@@ -32,30 +31,6 @@ class Clear:
       self(); return ''
 
 clear = Clear()
-
-def simulate_OLD(gate):
-    # a dispatch would be more concise
-    match gate:
-        case "x0":
-            x0()
-        case "x1":
-            x1()
-        case "y0":
-            y0()
-        case "y1":
-            y1()
-        case "z0":
-            z0()
-        case "z1":
-            z1()
-        case "h0":
-            h0()
-        case "h1":
-            h1()
-        case "cx":
-            cx()
-        case "sw":
-            sw()
 
 def simulate(gate):
     # use a dispatch table to select function to run
