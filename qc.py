@@ -108,10 +108,11 @@ def statevcector_normalization():
 
 def results():
     print("results:")
+    graphchar = '\N{Black Circle}'
     b = 0
     # evens then odds
     for n in chain(range(0, qc.COUNT, 2), range(1, qc.COUNT, 2)):
-        print(f'{b:02b}: [{qc.z[n]}] {qc.z[n] * "Q"}')
+        print(f'{b:02b}: [{qc.z[n]}] {qc.z[n] * graphchar}')
         b += 1
 
 def main():
