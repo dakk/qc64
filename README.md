@@ -1,7 +1,7 @@
 # QF - Quantum Simulator for FORTRAN
 
 QF is an experimental quantum computing simulator written in pure FORTRAN.
-You need a FORTRAN compiler to run this simulator
+You need a FORTRAN 2003 compiler to run this simulator.
 This is a port of qc64 project by Davide Gessa (dakk) https://github.com/dakk/qc64
 
 ![Creating a Bell State with FORTRAN](images/bellstateF.gif)
