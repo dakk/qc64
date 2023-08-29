@@ -10,7 +10,7 @@ This is a port of qc64 project by Davide Gessa (dakk) https://github.com/dakk/qc
 ## Features
 
 -    Simulate operations of various quantum gates including Pauli-X, Pauli-Y, Pauli-Z, Hadamard, CNOT, and SWAP on a two-qubit system.
--    Written in 304 lines of FORTRAN code.
+-    Written in 30ß lines of FORTRAN code.
 
 
 ## How it works
