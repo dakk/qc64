@@ -11,7 +11,7 @@ This is a port of qc64 project by Davide Gessa (dakk) https://github.com/dakk/qc
 
 -    Simulate operations of various quantum gates including Pauli-X, Pauli-Y, Pauli-Z, Hadamard, CNOT, and SWAP on a two-qubit system.
 -    Written in ~300 lines of FORTRAN code.
--    Uses OpenMP parallelization on multicore systems, if available.
+-    Uses OpenMP parallelization of the main loop (doing the "shots") on multicore systems, if available.
 
 
 ## How it works
