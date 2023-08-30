@@ -250,7 +250,7 @@
     p(3) = (qc%r(3) * qc%r(3) + qc%i(3) * qc%i(3)) + p(2)
     p(4) = (qc%r(4) * qc%r(4) + qc%i(4) * qc%i(4)) + p(3)
 
-    !$OMP PARALLEL SHARED(p,z)
+    !$OMP PARALLEL SHARED(p,z) PRIVATE(r)
     !$OMP DO
     do i = 1, shots
         CALL RANDOM_NUMBER(r)
