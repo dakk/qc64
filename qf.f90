@@ -1,17 +1,3 @@
-    !  QC.f90
-    !
-    !  FUNCTIONS:
-    !  QC - Entry point of console application.
-    !
-
-    !****************************************************************************
-    !
-    !  PROGRAM: QC
-    !
-    !  PURPOSE:  Entry point for the console application.
-    !
-    !****************************************************************************
-
     module m_QC
     implicit none
     private
@@ -198,6 +184,7 @@
 
     program QC_F
     use m_QC
+    use OMP_LIB
     implicit none
 
     ! Variables
@@ -263,6 +250,8 @@
     p(3) = (qc%r(3) * qc%r(3) + qc%i(3) * qc%i(3)) + p(2)
     p(4) = (qc%r(4) * qc%r(4) + qc%i(4) * qc%i(4)) + p(3)
 
+    !$OMP PARALLEL SHARED(p,z)
+    !$OMP DO
     do i = 1, shots
         CALL RANDOM_NUMBER(r)
         if (r < p(1)) then
@@ -278,6 +267,7 @@
             z(4) = z(4) + 1
         end if
     end do
+    !$OMP END PARALLEL
 
     print *,"Results:"
     write (*, fmt="(A,I,A)", advance="no"), "00: [", z(1), "]"
