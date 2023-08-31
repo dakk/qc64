@@ -35,8 +35,8 @@
     this%r(3) = this%r(4)
     this%r(4) = tmp
     tmp = this%i(3)
-    this%i(3) = this%i(3)
-    this%i(3) = tmp
+    this%i(3) = this%i(4)
+    this%i(4) = tmp
     end subroutine gate_x0
 
     subroutine gate_x1(this)
