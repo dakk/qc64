@@ -45,7 +45,7 @@
     this%c(1) = this%c(3)
     this%c(3) = tmp
 
-    call this%gate_y0() ! Fallthrough in original code
+    !call this%gate_y0() ! Fallthrough in original code
     end subroutine gate_x1
 
     subroutine gate_y0(this)
